@@ -1,0 +1,8 @@
+lava-blocked: true
+lava-fill-blocked: true
+water-blocked: true
+water-fill-blocked: true
+disallow-message: You can't use this item!
+blacklist:
+kick: true
+kick-message: You have been kicked for using an illegal item

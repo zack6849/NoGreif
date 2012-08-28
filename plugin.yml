@@ -1,0 +1,56 @@
+name: NoGriefReborn
+main: com.gmail.zcraig29.noGrief
+version: 1.0
+author: zack6849
+website: http://dev.bukkit.org/server-mods/lock-down/
+commands:
+    nogrief:
+        description: NoGrief's help and reload command
+        usage: /nogrief <argument>
+permissions:
+    nogrief.info:
+        description: permission to veiw nogreif's information
+        default: true
+    nogrief.alert:
+        description: permission to see alerts
+    nogrief.reload:
+        description: permission to reload nogreif
+    nogrief.blacklist.bypass:
+        description: permission to bypass nogrief's blacklist of items 
+    nogrief.bucket.lava.fill:
+        decription: permission to fill lava buckets.
+    nogrief.bucket.water.fill:
+        description: permission to fill water buckets.
+    nogrief.bucket.lava.place:
+        description: permission to use lava buckets.
+    nogrief.bucket.water.place:
+        description: permission to use water buckets.
+    nogrief.bucket.*:
+        description: permission to use all buckets
+        children:
+            nogrief.bucket.lava.fill: true
+            nogrief.bucket.water.fill: true
+            nogrief.bucket.water.use: true
+            nogrief.bucket.lava.use: true
+    nogrief.bucket.lava.*:
+        description: allows the full use of lava buckets
+        children:
+            nogrief.bucket.lava.use: true
+            nogrief.bucket.lava.fill: true
+    nogrief.bucket.water.*:
+        description: allows the full use of water buckets
+        children:
+            nogrief.bucket.water.use: true
+            nogrief.bucket.water.fill: true
+    nogrief.*:
+        description: allows you to bypass all nogrief protections
+        children:
+            nogrief.bucket.lava.fill: true
+            nogrief.bucket.lava.use: true
+            nogrief.bucket.water.fill: true
+            nogrief.bucket.water.use: true
+            nogrief.blacklist.bypass: true
+            nogreif.reload: true
+            nogreif.info: true
+            nogreif.alert: true
+    

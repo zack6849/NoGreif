@@ -1,56 +1,56 @@
-name: NoGriefReborn
+name: GriefSheild
 main: com.gmail.zcraig29.noGrief
 version: 1.0
 author: zack6849
-website: http://dev.bukkit.org/server-mods/lock-down/
+website: http://dev.bukkit.org/server-mods/griefsheild/
 commands:
-    nogrief:
-        description: NoGrief's help and reload command
-        usage: /nogrief <argument>
+    griefshield:
+        description: griefshield's help and reload command
+        usage: /griefshield <argument>
 permissions:
-    nogrief.info:
-        description: permission to veiw nogreif's information
+    griefshield.info:
+        description: permission to veiw nogrief's information
         default: true
-    nogrief.alert:
+    griefshield.alert:
         description: permission to see alerts
-    nogrief.reload:
-        description: permission to reload nogreif
-    nogrief.blacklist.bypass:
-        description: permission to bypass nogrief's blacklist of items 
-    nogrief.bucket.lava.fill:
+    griefshield.reload:
+        description: permission to reload nogrief
+    griefshield.blacklist.bypass:
+        description: permission to bypass griefshield's blacklist of items 
+    griefshield.bucket.lava.fill:
         decription: permission to fill lava buckets.
-    nogrief.bucket.water.fill:
+    griefshield.bucket.water.fill:
         description: permission to fill water buckets.
-    nogrief.bucket.lava.place:
+    griefshield.bucket.lava.use:
         description: permission to use lava buckets.
-    nogrief.bucket.water.place:
+    griefshield.bucket.water.use:
         description: permission to use water buckets.
-    nogrief.bucket.*:
+    griefshield.bucket.*:
         description: permission to use all buckets
         children:
-            nogrief.bucket.lava.fill: true
-            nogrief.bucket.water.fill: true
-            nogrief.bucket.water.use: true
-            nogrief.bucket.lava.use: true
-    nogrief.bucket.lava.*:
+            griefshield.bucket.lava.fill: true
+            griefshield.bucket.water.fill: true
+            griefshield.bucket.water.use: true
+            griefshield.bucket.lava.use: true
+    griefshield.bucket.lava.*:
         description: allows the full use of lava buckets
         children:
-            nogrief.bucket.lava.use: true
-            nogrief.bucket.lava.fill: true
-    nogrief.bucket.water.*:
+            griefshield.bucket.lava.use: true
+            griefshield.bucket.lava.fill: true
+    griefshield.bucket.water.*:
         description: allows the full use of water buckets
         children:
-            nogrief.bucket.water.use: true
-            nogrief.bucket.water.fill: true
-    nogrief.*:
-        description: allows you to bypass all nogrief protections
+            griefshield.bucket.water.use: true
+            griefshield.bucket.water.fill: true
+    griefshield.*:
+        description: allows you to bypass all griefshield protections
         children:
-            nogrief.bucket.lava.fill: true
-            nogrief.bucket.lava.use: true
-            nogrief.bucket.water.fill: true
-            nogrief.bucket.water.use: true
-            nogrief.blacklist.bypass: true
-            nogreif.reload: true
-            nogreif.info: true
-            nogreif.alert: true
+            griefshield.bucket.lava.fill: true
+            griefshield.bucket.lava.use: true
+            griefshield.bucket.water.fill: true
+            griefshield.bucket.water.use: true
+            griefshield.blacklist.bypass: true
+            griefshield.reload: true
+            griefshield.info: true
+            griefshield.alert: true
     
